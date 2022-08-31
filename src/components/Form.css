@@ -1,0 +1,17 @@
+.form{
+    border: 2px solid #00d3ca;
+    border-radius: 4px;
+    width: 500px;
+    margin-left: 30%;
+}
+
+.form button{
+    background-color: #00d3ca;
+    border: none;
+}
+
+.form button:hover{
+    transition: 0.25s;
+    background-color: #00958e;
+    color: white;
+}
