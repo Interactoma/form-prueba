@@ -9,3 +9,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button{
+  background-color: #fff;
+  border: 1px solid #222;
+  color: #222;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+button:hover{
+  background-color: #7066e0;
+  color: #fff;
+  border:none;
+}

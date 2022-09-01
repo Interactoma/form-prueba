@@ -31,10 +31,12 @@ const ButtonEdith = ({update, index, users})=>{
               if (!name || !lastname || !email || !number || !curp || !address || !birthdate) {
                 Swal.showValidationMessage(`Please enter login and password`)
               }
-              users[index] = newUser = { name: name, lastname: lastname, email: email, number: number, curp: curp, address: address , birthdate: birthdate}
-              
+              newUser = { name: name, lastname: lastname, email: email, number: number, curp: curp, address: address , birthdate: birthdate}
+              let nuevosUsuarios = users.filter((user, i) => i !== index)
+              nuevosUsuarios.push(newUser)
+              update(nuevosUsuarios)
 
-                update(users)
+                
             }
           }).then((result) => {
             Swal.fire(`

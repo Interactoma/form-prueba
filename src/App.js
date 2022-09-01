@@ -37,20 +37,21 @@ function App() {
         </div>
       </Card>
       <Card>
+        <h1>Usuarios</h1>
         <ul>
-          {usuarios.map((x,index) =>
+          {usuarios.length > 0? usuarios.map((x,index) =>
           <li key={index}>
-            {`Nombre: ${x.name}, 
-            Apellido: ${x.lastname}, 
-            CURP: ${x.curp}, 
-            Direccion ${x.address}, 
-            Correo: ${x.email}, 
-            Numero ${x.number}, 
+            {`Nombre: ${x.name}
+            ${x.lastname} || 
+            CURP: ${x.curp} ||
+            Direccion: ${x.address} || 
+            Correo: ${x.email} ||
+            Numero: ${x.number} || 
             Fecha de nacimiento: ${x.birthdate} 
-            `}
+            `} <br />
             <ButtonEdith update={update} index={index} users={usuarios}/>
             <ButtonDelete update={update} index={index} users={usuarios}/>
-          </li>)}
+          </li>) : <p>No hay usuarios</p>}
         </ul>
       </Card>
     </Container>

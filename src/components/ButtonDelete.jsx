@@ -5,7 +5,7 @@ const ButtonDelete = ({update, index, users})=> {
     }
 
     return(
-        <button onClick={handleClick}>Delete</button>
+        <button onClick={handleClick}>Eliminar</button>
     )
 }
 

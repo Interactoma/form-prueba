@@ -44,7 +44,7 @@ const Form = ({submit}) =>{
             {error.curp && <p className='error'>{error.curp}</p>}
             <Input label="Direccion" name="address" value={formulario.address} onChange={handleChange} placeholder='Direccion' />
             {error.address && <p className='error'>{error.address}</p>}
-            <Input label="Fecha de nacimiento" name="birthdate" value={formulario.birthdate} onChange={handleChange} placeholder='Fecha de nacimiento dd/mm/aaa' />
+            <Input label="Fecha de nacimiento" name="birthdate" value={formulario.birthdate} onChange={handleChange} placeholder='dd/mm/aaa' />
             {error.birthdate && <p className='error'>{error.birthdate}</p>}
             <Button>Enviar</Button>
       </form>
